@@ -76,7 +76,7 @@ RegisterServerEvent('qb-overlord-laundering:load', function(machine)
 
 	Citizen.Wait(timer) -- probably a better way to do this but not too fussed about serverside performance
 
-	TriggerClientEvent('qb-phone:client:LaunderNotify', src)
+	TriggerClientEvent('qs-smartphone:client:LaunderNotify', src)
 
 	CONFIG['Machines'][machine]['available'] = false
 	CONFIG['Machines'][machine]['finished'] = true

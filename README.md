@@ -9,10 +9,10 @@ https://www.gta5-mods.com/maps/abandoned-laundromat-interior-singleplayer-fivem-
 1) Upload the contents of interact-sound/client/html/sounds to your interact-sound installation
 2) Upload the directory 'qb-overlord-laundering' & add 'start qb-overlord-laundering' to your server.cfg
 ### If you want the phone notification
-Add the following code to qb-phone/client/main.lua
+Add the following code to qs-smartphone/client/main.lua
 ```
-RegisterNetEvent('qb-phone:client:LaunderNotify')
-AddEventHandler('qb-phone:client:LaunderNotify', function(message)
+RegisterNetEvent('qs-smartphone:client:LaunderNotify')
+AddEventHandler('qs-smartphone:client:LaunderNotify', function(message)
     SendNUIMessage({
         action = "PhoneNotification",
         PhoneNotify = {
